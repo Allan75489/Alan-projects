@@ -1,7 +1,6 @@
 import fireBurger from "../assets/fire-burger-house.png";
 import Latavolaitaliana from "../assets/la-tavola-italiana.png";
 import pythondevpractice from "../assets/python-dev-practice.png";
-import PortfolioPessoal from "../assets/portfolio-pessoal.png";
 
 export const CATEGORIES = ["Todos", "React", "JavaScript", "Python", "React Native", "HTML/CSS", "Java"];
 
@@ -56,23 +55,6 @@ export const PROJECTS = [
       "Ativades de aprendizado de python",
     ],
     github: "https://github.com/Allan75489/python-dev-practice",
-  },
-  {
-    id: "portfolio-pessoal",
-    name: "Portfólio Pessoal",
-    file: "portfolio-pessoal",
-    category: "JavaScript",
-    image: Portfoliopessoal,
-    short: "Versão anterior do portfólio pessoal, 100% vanilla JS.",
-    full: "Primeira versão do meu portfólio pessoal, construída sem frameworks para aprofundar o domínio de HTML, CSS e JavaScript puro. Serviu de base para os conceitos de performance e organização aplicados nos projetos seguintes.",
-    techs: ["HTML", "CSS", "JavaScript"],
-    challenges: [
-      "Organizar JavaScript puro em módulos reutilizáveis",
-      "Criar animações de scroll sem bibliotecas externas",
-      "Garantir acessibilidade básica sem um framework de apoio",
-    ],
-    github: "",
-    deploy: "",
   },
 ];
 
