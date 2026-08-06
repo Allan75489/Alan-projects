@@ -62,7 +62,7 @@ export const PROJECTS = [
     name: "Portfólio Pessoal",
     file: "portfolio-pessoal",
     category: "JavaScript",
-    image: PortfolioPessoal,
+    image: Portfoliopessoal,
     short: "Versão anterior do portfólio pessoal, 100% vanilla JS.",
     full: "Primeira versão do meu portfólio pessoal, construída sem frameworks para aprofundar o domínio de HTML, CSS e JavaScript puro. Serviu de base para os conceitos de performance e organização aplicados nos projetos seguintes.",
     techs: ["HTML", "CSS", "JavaScript"],
