@@ -1,7 +1,7 @@
 import fireBurger from "../assets/fire-burger-house.png";
 import Latavolaitaliana from "../assets/la-tavola-italiana.png";
 import pythondevpractice from "../assets/python-dev-practice.png";
-import PortfolioPessoal from "../assets/Portfolio-pessoal.png";
+import PortfolioPessoal from "../assets/portfolio-pessoal.png";
 
 export const CATEGORIES = ["Todos", "React", "JavaScript", "Python", "React Native", "HTML/CSS", "Java"];
 
