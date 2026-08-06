@@ -1,6 +1,6 @@
-# Portfólio — Allan Gustavo
+# Projetos — Allan Gustavo
 
-Portfólio pessoal de desenvolvedor Full Stack, em React + Vite + React Router.
+Repositorio com todos os meus projetos. 
 
 ## Como rodar
 
