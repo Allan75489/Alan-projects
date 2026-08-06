@@ -1,0 +1,42 @@
+.cta-section {
+  padding: 20px 0 100px;
+}
+.cta-card {
+  position: relative;
+  text-align: center;
+  padding: 64px 32px;
+  border: 1px solid var(--border-hover);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--surface), var(--bg));
+}
+.cta-glow {
+  position: absolute;
+  top: -60%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 480px;
+  height: 320px;
+  background: radial-gradient(ellipse, rgba(47, 123, 255, 0.35), transparent 70%);
+  filter: blur(30px);
+  pointer-events: none;
+}
+.cta-icon {
+  color: var(--blue-soft);
+  margin-bottom: 16px;
+  position: relative;
+}
+.cta-card h2 {
+  font-family: var(--font-display);
+  font-size: clamp(24px, 4vw, 32px);
+  margin: 0 0 12px;
+  position: relative;
+}
+.cta-card p {
+  color: var(--muted);
+  margin: 0 0 28px;
+  position: relative;
+}
+.cta-card .btn {
+  position: relative;
+}

@@ -1,0 +1,199 @@
+.hero {
+  position: relative;
+  padding: 96px 24px 60px;
+  overflow: hidden;
+}
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(47, 123, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(47, 123, 255, 0.06) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 20%, black 40%, transparent 90%);
+  pointer-events: none;
+}
+.hero-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  pointer-events: none;
+}
+.hero-glow-a {
+  width: 420px;
+  height: 420px;
+  background: rgba(47, 123, 255, 0.28);
+  top: -120px;
+  left: -80px;
+}
+.hero-glow-b {
+  width: 360px;
+  height: 360px;
+  background: rgba(34, 211, 238, 0.16);
+  bottom: -140px;
+  right: -60px;
+}
+
+.hero-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 56px;
+  align-items: center;
+}
+@media (max-width: 860px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--muted);
+  letter-spacing: 0.4px;
+  margin: 0 0 18px;
+}
+.eyebrow-prompt {
+  color: var(--cyan);
+  margin-right: 8px;
+}
+
+.hero-name {
+  font-family: var(--font-display);
+  font-size: clamp(38px, 6vw, 60px);
+  line-height: 1.05;
+  font-weight: 700;
+  margin: 0 0 14px;
+  letter-spacing: -0.5px;
+}
+.hero-role {
+  font-family: var(--font-mono);
+  font-size: 17px;
+  color: var(--blue-soft);
+  margin: 0 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.role-caret {
+  color: var(--muted-2);
+}
+.blinking-cursor {
+  animation: blink 1s steps(1) infinite;
+  color: var(--blue-soft);
+}
+
+.hero-desc {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--muted);
+  max-width: 480px;
+  margin: 0 0 32px;
+}
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.hero-terminal {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 0 60px rgba(47, 123, 255, 0.12), 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+.hero-terminal-body {
+  padding: 40px 30px 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+}
+
+.avatar-ring {
+  position: relative;
+  width: 148px;
+  height: 148px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avatar-glow {
+  position: absolute;
+  inset: -14px;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, var(--blue), var(--cyan), var(--blue));
+  filter: blur(18px);
+  opacity: 0.55;
+  animation: spin 7s linear infinite;
+}
+.avatar-circle,
+.avatar-img {
+  position: relative;
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.avatar-circle {
+  background: linear-gradient(145deg, #14203a, #0a0e18);
+  border: 1px solid var(--border-hover);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--text);
+}
+.avatar-img {
+  object-fit: cover;
+  border: 1px solid var(--border-hover);
+}
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+.badge-chip {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--blue-soft);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  padding: 5px 10px;
+  border-radius: 999px;
+}
+
+.scroll-cue {
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
+}
+.scroll-cue span {
+  width: 22px;
+  height: 36px;
+  border: 1px solid var(--border-hover);
+  border-radius: 12px;
+  position: relative;
+  display: block;
+}
+.scroll-cue span::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  width: 3px;
+  height: 8px;
+  margin-left: -1.5px;
+  background: var(--blue-soft);
+  border-radius: 2px;
+  animation: scrollDot 1.6s ease infinite;
+}
